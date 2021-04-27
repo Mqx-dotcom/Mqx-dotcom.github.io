@@ -3,13 +3,14 @@
 <h2 align=center> Idea <h3><br /> 
 
 
+```
 Insert a mario like game in about me (chrome offline?)
 Clean design, minimalist but with small details/art
 interactive menu / content  for a smooth experience
 i want every menu/link/hover to have an interaction
 still wondering if i go dark level or light grey
 i'm not the crazy type of guys for colors..
-
+```
 
 <br /> 
 <h3 align=center> Template Idea <h3><br /> 

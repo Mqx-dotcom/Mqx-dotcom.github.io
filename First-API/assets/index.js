@@ -82,7 +82,7 @@ const searchctop5 = (currency) => {
   const tempMaxContainer = document.getElementById('tempmax')
 
   const searchWeather = (city) => {
-      fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&exclude=minutely,hourly&lang=fr&units=metric&appid=7c867d5a522b8c6704c5ad73c3d97b70`)
+      fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&exclude=minutely,hourly&lang=fr&units=metric&appid=7c867d5a522b8c6704c5ad73c3d97b70`)
         .then(response => response.json())
         .then((data) => {
           countryContainer.innerHTML = ""

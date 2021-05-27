@@ -2,7 +2,7 @@
 // FIRST ROW TOP 5 TABLE  FIRST ROW TOP 5 TABLE  FIRST ROW TOP 5 TABLE  //
 const cryptotop5Container = document.getElementById('ctop5')
 const searchctop5 = (currency) => {
-    fetch(`https://api.nomics.com/v1/currencies/ticker?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac&ids=BTC,ETH,USDT,DOGE,XRP&interval=1d&convert=USD&per-page=100&page=1`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/currencies/ticker?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac&ids=BTC,ETH,USDT,DOGE,XRP&interval=1d&convert=USD&per-page=100&page=1`)
       .then(response => response.json())
       .then((data) => {
         console.log(data) ;
@@ -31,7 +31,7 @@ const searchctop5 = (currency) => {
   const searchBtn = document.querySelector('.btn-search')
   const searchCryptos = (currency) => {
     cryptoContainer.innerHTML = ""
-    fetch(`https://api.nomics.com/v1/currencies/ticker?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac&ids=${currency}&interval=1d&convert=EUR&per-page=100&page=1`)
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/currencies/ticker?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac&ids=${currency}&interval=1d&convert=EUR&per-page=100&page=1`)
       .then(response => response.json())
       .then((data) => {
         console.log(data) ;

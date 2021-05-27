@@ -1,0 +1,246 @@
+@font-face {
+    font-family: "fontawesome";
+    src: url("fonts/fontawesome-webfont.eot");
+  }
+
+html,body {
+    padding: 0%;
+    margin: 0%;
+    background: no-repeat center center fixed;
+    /* background-image: linear-gradient(315deg, #2f4353 0%, #788491 74%); */
+    background-image: url(/assets/cool-background2.png);
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+}
+
+table { 
+    border-collapse: collapse; 
+}
+
+tr {
+    border-bottom: 1pt solid black;
+}
+
+.hovered:hover {
+    background:rgb(196, 196, 196);;
+  }
+
+/* TITTLE PART    TITTLE PART   TITTLE PART*/
+.tittle {
+    display: flex;
+    flex-direction: row;
+    /* padding-left: 5%; */
+}
+
+.quotedbox {
+    width: 30%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.quotedbox h1 {
+    font-size: 200%;
+    padding-left: 20%;
+    text-shadow: rgb(169, 240, 196) 1px 0 10px;
+}
+
+.jokes {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+    background:#eee;
+    margin-top: 40px;
+    box-shadow: 0 10px 6px -6px #777;
+    text-align: center;
+}
+.jokes h1 {
+    padding: 0%;
+    margin: 0%
+}
+.jokes p {
+    padding: 0px 10px 0px 10px;
+}
+
+.weather {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 10px;
+    width:40%;
+    height:200px;
+    background:#eee;
+    margin:40px auto;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    text-align: center;
+}
+.weather h2 {
+    display: flex;
+    align-items: flex-start;
+    padding: 0%;
+    margin: 0%;
+}
+.searchboxw {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.col {
+    display: flex;
+    flex-direction: column;
+}
+.weatherbox {
+    display: flex;    
+    flex-direction: column;
+}
+.sun {
+    background-image: url("assets/sun.png"), url("assets/cloud.png"), url("assets/rain.png"), url("assets/clear.png");
+    background-size: 0%;
+    background-repeat: no-repeat;
+    background-position: top left, top right, bottom right,center top;
+
+}
+
+/* TOP PART TOP PART TOP PART TOP PART TOP PART  */
+.top {
+    display: flex;
+    display: row;
+}
+
+.tab1 {
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+    height:200px;
+    background:#eee;
+    margin:40px auto;
+    /* -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777; */
+    box-shadow: 0 10px 6px -6px #777;
+}
+
+.top5 {
+    display: block;
+}
+
+.txtr {
+    text-align: right;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px;
+    width:40%;
+    height:200px;
+    background:#eee;
+    margin:40px auto;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    text-align: center; 
+}
+
+
+/* BOTTOM PART BOTTOM PART BOTTOM PART BOTTOM PART */
+.bottom {
+    display: flex;
+    display: row;
+}
+
+.main-cont {
+    width: 40%;
+    background:#eee;
+    margin:1% auto;
+    color: rgb(90, 88, 88);
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+    box-shadow: 0 10px 6px -6px #777;
+    /* border-radius: 30px; */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: no-repeat center center;
+    background-size: contain;
+    margin: 1%;
+    padding: 1%;
+}
+
+
+
+
+/* Tableau */
+td,
+th {
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1%;
+    /* padding: 5%; */
+}
+
+td {
+    text-align: center;
+}
+
+tr { 
+    background-color: #c7c4c4;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+th {
+    min-width: 100px;
+}
+
+th[scope="col"] {
+    background-color: #353535;
+    color: #eee;
+    min-width: 100px;
+}
+
+/* Block Quote */
+blockquote {
+    /* margin: 0; */
+    max-width: 300px;
+}
+
+blockquote p {
+    padding: 5%;
+    background: #eee;
+    border-radius: 5px;
+}
+
+blockquote {
+    text-align: center;
+    width: fit-content;
+    /* padding: 20px; */
+}
+
+figcaption {
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 80%;
+}
+
+

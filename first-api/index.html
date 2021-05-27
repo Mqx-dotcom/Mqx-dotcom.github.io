@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crypto Price Request</title>
+  <link rel="icon" href="assets/favicon.jpg" type="image/jpg" />
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body onload="searchctop5();jokes()">
+<!-- <body onload="searchWeather()"> -->
+<!-- <body onload="clearweather()"> -->
+<!-- <body> -->
+
+<!-- TITLE -->
+<section class="tittle">
+<!-- QUOTES BOX -->
+<div class="quotedbox">
+	<h1>Melting pot page</h1> 
+  <figure>
+  <blockquote><p class="hovered">"Place where elements of very varied origins mingle, where different ideas meet."</p><figcaption>—Somebody with too much free time, 2021</blockquote>
+  </figure>
+</div>
+<!-- JOKES BOX -->
+<div class="jokes hovered" id="jokesbox">
+  <h1>Chuck GOD Norris :</h1>
+</div>
+<!-- WEATHER BOX -->
+<div class="weather hovered sun">
+    <!-- <h2>Weather :</h2> -->
+    <div class="searchboxw">
+      <input id="searchInputw" type="text" placeholder="Brussels, Paris, London,...">
+      <button class="btn-searchw">SEARCH</button>
+    </div> 
+    <div class="col">
+      <table class="col" id="tabweather">
+      <tr>
+          <th scope="col">Country</th>
+            <th id="country"></th>
+      </tr>
+      <tr>
+          <th scope="col">City</th>
+          <th id="city"></th>
+      </tr>
+      <tr>
+          <th scope="col">Temp.</th>
+          <th id="temp"></th>
+      </tr>
+      <tr >
+          <th scope="col">Humidity</th>
+          <th id="humid"></th>
+      </tr>
+      <tr>
+        <th scope="col">t° Min</th>
+        <th id="tempmin"></th>
+      </tr>
+      <tr>
+        <th scope="col">t° Max</th>
+        <th id="tempmax"></th>
+      </tr>
+    </table>
+  </div>
+</div>
+</section>
+
+<!-- 1st PART -->
+<section class="top">
+<!-- 1ST BOX -->
+    <div class="tab1 hovered">  
+    <table class="top5 " id="ctop5">
+        <tr>
+            <th style="min-width:50px" scope="col">Logo</th>
+            <th style="min-width:60px" scope="col">ID</th> 
+            <th style="min-width:90px" scope="col">Name</th>
+            <th style="min-width:100px" scope="col">Price</th>
+            <!-- <th scope="col">%/24H</th>             -->
+        </tr>
+    </table>
+    </div>
+
+<!-- 2ND BOX -->
+    <div class="head hovered">
+      <h1>Search your crypto</h1>
+      <div class="searchbox">
+        <input id="searchInput" type="text" minlength="2" onkeyup="this.value = this.value.toUpperCase();" placeholder="BTC, XRP,...">
+        <button class="btn-search">SEARCH</button>
+      </div> 
+  </div>
+</section>
+
+<!-- 3RD BOX -->
+<section class="bottom"><
+    <div class="main-cont hovered" id="cryptos">
+    </div>
+</section>
+
+  <script src="assets/index.js"></script>
+</body>
+</html>

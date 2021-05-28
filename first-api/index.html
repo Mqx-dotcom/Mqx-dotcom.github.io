@@ -3,36 +3,49 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Crypto Price Request</title>
+  <title>Melting Pot page (Max S.)</title>
   <link rel="icon" href="assets/favicon.jpg" type="image/jpg" />
   <link rel="stylesheet" href="assets/style.css">
 </head>
 
 <body onload="searchctop5();jokes()">
-<!-- <body onload="searchWeather()"> -->
-<!-- <body onload="clearweather()"> -->
-<!-- <body> -->
 
-<!-- TITLE -->
-<section class="tittle">
-<!-- QUOTES BOX -->
-<div class="quotedbox">
+<!-- 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ -->
+  <Section class="box1">
+    
+<!-- MELTING POT -->
+<div class="quotedbox shadowbox hovered">
 	<h1>Melting pot page</h1> 
   <figure>
   <blockquote><p class="hovered">"Place where elements of very varied origins mingle, where different ideas meet."</p><figcaption>—Somebody with too much free time, 2021</blockquote>
   </figure>
 </div>
-<!-- JOKES BOX -->
-<div class="jokes hovered" id="jokesbox">
+<!-- GOOGLE SEARCH  -->
+<div class="shadowbox searchbar hovered">
+  <img src="assets/lmgtfy.png">
+  <form role="search" id="inputgoogle">
+    <input type="search" id="searchgoogle" name="sg" placeholder="Dive in the web...">
+    <button>SEARCH</button>
+  </form>
+</div>
+</section>
+
+<!-- 2 BOX 2 $$ 2 BOX 2 $$ 2 BOX 2 $$ 2 BOX 2 $$ 2 BOX 2 $$ 2 BOX 2 $$ 2 BOX 2 $$ -->
+<section class="box2">
+
+<!-- CHUCK NORRIS BOX -->
+<div class="shadowbox hovered" id="jokesbox">
   <h1>Chuck GOD Norris :</h1>
 </div>
+
 <!-- WEATHER BOX -->
-<div class="weather hovered sun">
-    <!-- <h2>Weather :</h2> -->
+<div class="shadowbox hovered sun">
+<!-- INPUT WEATHER -->
     <div class="searchboxw">
-      <input id="searchInputw" type="text" placeholder="Brussels, Paris, London,...">
+      <input type="search" id="searchInputw" type="text" placeholder="Brussels, Paris, London,...">
       <button class="btn-searchw">SEARCH</button>
     </div> 
+<!-- RESULT WEATHER SEARCH -->
     <div class="col">
       <table class="col" id="tabweather">
       <tr>
@@ -64,10 +77,10 @@
 </div>
 </section>
 
-<!-- 1st PART -->
-<section class="top">
-<!-- 1ST BOX -->
-    <div class="tab1 hovered">  
+<!--  3 BOX 3 $$  3 BOX 3 $$  3 BOX 3 $$  3 BOX 3 $$  3 BOX 3 $$  3 BOX 3 $$ -->
+<section class="box3">
+<!-- TOP5 CRYPTO -->
+    <div class="shadowbox hovered">  
     <table class="top5 " id="ctop5">
         <tr>
             <th style="min-width:50px" scope="col">Logo</th>
@@ -79,19 +92,20 @@
     </table>
     </div>
 
-<!-- 2ND BOX -->
-    <div class="head hovered">
+<!-- SEARCH YOUR CRYPTO -->
+    <div class="shadowbox hovered">
       <h1>Search your crypto</h1>
       <div class="searchbox">
-        <input id="searchInput" type="text" minlength="2" onkeyup="this.value = this.value.toUpperCase();" placeholder="BTC, XRP,...">
+        <input type="search" id="searchInput" type="text" minlength="2" onkeyup="this.value = this.value.toUpperCase();" placeholder="BTC, XRP,...">
         <button class="btn-search">SEARCH</button>
       </div> 
   </div>
 </section>
 
-<!-- 3RD BOX -->
-<section class="bottom"><
-    <div class="main-cont hovered" id="cryptos">
+<!-- 4 BOX 4 $$ 4 BOX 4 $$ 4 BOX 4 $$ 4 BOX 4 $$ 4 BOX 4 $$ 4 BOX 4 $$ 4 BOX 4 $$  -->
+<!-- RESULT OF SEARCHED CRYPTO -->
+<section class="box4">
+    <div class="cryptosearch hovered" id="cryptos">
     </div>
 </section>
 

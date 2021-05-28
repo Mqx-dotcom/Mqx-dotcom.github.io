@@ -1,5 +1,5 @@
 
-// FIRST ROW TOP 5 TABLE  FIRST ROW TOP 5 TABLE  FIRST ROW TOP 5 TABLE  //
+// CRYPTO TOP 5  //
 const cryptotop5Container = document.getElementById('ctop5')
 const searchctop5 = (currency) => {
     fetch(`https://cors-anywhere.herokuapp.com/https://api.nomics.com/v1/currencies/ticker?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac&ids=BTC,ETH,USDT,DOGE,XRP&interval=1d&convert=USD&per-page=100&page=1`)
@@ -26,7 +26,7 @@ const searchctop5 = (currency) => {
   }
 
 
- // SECOND ROW SEARCH BAR + RESIMT  SECOND ROW SEARCH BAR + RESIMT //
+ // CRYPTO SEARCH & ERASE //
   const cryptoContainer = document.getElementById('cryptos')
   const searchBtn = document.querySelector('.btn-search')
   const searchCryptos = (currency) => {
@@ -53,9 +53,9 @@ const searchctop5 = (currency) => {
   
         })
       })
-  
   }
   searchBtn.addEventListener('click', (event) => {
+    event.preventDefault();
     let input = document.getElementById('searchInput')
     if (input === "") {
       console.log("empty");
@@ -67,13 +67,10 @@ const searchctop5 = (currency) => {
   })
 
 
-// WEATHER PART WEATHER PART WEATHER PART WEATHER PART  //
-
+// WEATHER SEARCH & ERASE  //
   let sun = document.querySelector('.sun');
   let rain = document.querySelector('.rain');
-
   const searchBtnw = document.querySelector('.btn-searchw')
-
   const countryContainer = document.getElementById('country')
   const cityContainer = document.getElementById('city')
   const tempContainer = document.getElementById('temp')
@@ -135,6 +132,7 @@ const searchctop5 = (currency) => {
     }
 
     searchBtnw.addEventListener('click', (event) => {
+      event.preventDefault();
       let input = document.getElementById('searchInputw')
       if (input === "") {
         console.log("empty");
@@ -148,7 +146,7 @@ const searchctop5 = (currency) => {
 
 
 
-//  JOKES PART JOKES PART JOKES PART JOKES PART JOKES PART  //
+//  CHUCK NORRIS JOKES  //
 const jokesbox = document.getElementById('jokesbox')
 const jokes = (data) => {
     fetch(`https://api.chucknorris.io/jokes/random `)
@@ -166,42 +164,29 @@ const jokes = (data) => {
 }
 
 
+// GOOGLE SEARCH //
+const srcg = document.getElementById('inputgoogle');
+const sg = document.getElementById('searchgoogle');
+const google = 'https://www.google.com/search?q=';
+
+function submitsearch(event) {
+  event.preventDefault();
+  const url = google+sg.value;
+  const win = window.open(url, '_blank');
+  win.focus();
+}
+srcg.addEventListener('submit', submitsearch);
+
+
+
+
+// SAFE ZONE RESSOURCE 
 // icon_url: "https://assets.chucknorris.host/img/avatar/chuck-norris.png
-
-
 // fetch("https://api.nomics.com/v1/markets?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac")
 //   .then(response => response.json())
 //   .then(data => console.log(data))
 // fetch("https://api.nomics.com/v1/currencies/ticker?key=26f21cb3dcbfbeddbdb51687f9e6dc78d0010fac&ids=BTC,ETH&interval=1d&convert=EUR&per-page=100&page=1")
 //   .then(response => response.json())
 //   .then(data => console.log(data))
-
 // https://api.openweathermap.org/data/2.5/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid=7c867d5a522b8c6704c5ad73c3d97b70
-
 // https://api.openweathermap.org/data/2.5/onecall?lat=50.8466&lon=-4.3528&exclude=minutely,hourly&lang=fr&units=metric&appid=7c867d5a522b8c6704c5ad73c3d97b70
-
-  // const wContainer = document.getElementById('tabweather')
-  // const clearweather = () => {
-  // wContainer.innerHTML = ""
-  // let tabweather = `
-  // <tr id="country">
-  // <th scope="col">Country</th>
-  // </tr>
-  // <tr id="city">
-  // <th scope="col">City</th>
-  // </tr>
-  // <tr id="temp">
-  // <th scope="col">Temp.</th>
-  // </tr>
-  // <tr id="humid">
-  // <th scope="col">Humidity</th>
-  // </tr>
-  // <tr id="tempmin">
-  // <th scope="col">t° Min</th>
-  // </tr>
-  // <tr id="tempmax">
-  // <th scope="col">t° Max</th>
-  // </tr>
-  // `
-  // wContainer.insertAdjacentHTML('beforeend', tabweather)
-  // }

@@ -7,10 +7,16 @@ html,body {
     margin: 0%;
     background: no-repeat center center fixed;
     /* background-image: linear-gradient(315deg, #2f4353 0%, #788491 74%); */
-    background-image: url(cool-background2.png);
+    background-image: url("cool-background2.png");
     background-size: cover;
     font-family: "Poppins", sans-serif;
 }
+
+body {
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
 table { 
     border-collapse: collapse; 
 }
@@ -83,7 +89,8 @@ figcaption {
     border: 10px;
     width:40%;
     height:200px;
-    background:#eee;
+    background: rgb(169 240 196 / 40%);
+    /* background:#eee; */
     margin:40px auto;
     -webkit-box-shadow: 0 10px 6px -6px #777;
     -moz-box-shadow: 0 10px 6px -6px #777;
@@ -98,8 +105,14 @@ figcaption {
 .shadowbox p {
     padding: 0px 10px 0px 10px;
 }
+/* .shadowbox:hover {
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2); 
+    transform: scale(1.2); 
+  }
+   */
 .hovered:hover {
-    background:rgb(196, 196, 196);;
+    background:rgb(196, 196, 196);
   }
 .col {
     display: flex;
@@ -167,13 +180,104 @@ figcaption {
 }
 
 
+/* Parallax 1st Test */
+#letsdance {
+    position: relative;
+}
+
+#diogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px; 
+    margin-left: -100px; 
+    opacity: 0.8;
+}
+
+#diogod {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-top: -100px; 
+    margin-left: -100px; 
+    opacity: 0.8;
+}
+.diogod:hover {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #00ba7c;
+}
+
+.diogod:hover img{ 
+    display: none;
+}
+
+#scofield {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    width: 200px;
+    height: 240px;
+    margin-top: -100px; 
+    margin-left: -120px; 
+    opacity: 0.8;
+}
+
+#etchebest {
+    position: absolute;
+    top: 30%;
+    right: 30%;
+    width: 200px;
+    height: 240px;
+    margin-top: -100px; 
+    margin-right: -120px; 
+    opacity: 0.8;
+}
 
 
 
-
-
-
-
+/* Info button */
+.padtop {
+    padding-top: 2%;
+}
+.alert {
+    padding: 20px;
+    background-color: #2f4353;
+    color: white;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 2;
+}
+.alert a {
+    text-decoration: none;
+    color: rgb(169 240 196);
+}
+  .closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .closebtn:hover {
+    color: black;
+  }
 
 
 

@@ -6,13 +6,23 @@
   <title>Melting Pot page (Max S.)</title>
   <link rel="icon" href="assets/favicon.jpg" type="image/jpg" />
   <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
 </head>
 
 <body onload="searchctop5();jokes()">
-
+  <!-- PARALLAX BG FIXED  PARALLAX BG FIXED  PARALLAX BG FIXED  PARALLAX BG FIXED -->
+  <div id="letsdance">
+    <!-- INFO MSG  INFO MSG  INFO MSG  INFO MSG  INFO MSG  INFO MSG  INFO MSG  -->
+    <div class="alert">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <strong>Catch the dioGOD ! </strong> - To enable the Crypto Box use <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">this</a> and <a href=".">refresh</a>
+    </div>
 <!-- 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ 1 BOX 1 $$ -->
-  <Section class="box1">
-    
+  <Section class="box1 padtop">
+    <img class="scofield" src="assets/scofield.png" id="scofield">
+    <img class="etchebest" src="assets/etchebest.png" id="etchebest">       
 <!-- MELTING POT -->
 <div class="quotedbox shadowbox hovered">
 	<h1>Melting pot page</h1> 
@@ -20,6 +30,10 @@
   <blockquote><p class="hovered">"Place where elements of very varied origins mingle, where different ideas meet."</p><figcaption>—Somebody with too much free time, 2021</blockquote>
   </figure>
 </div>
+
+<img class="diogo" src="assets/diogo.png" id="diogo">
+<img class="diogod" src="assets/diogod.png" id="diogod">
+
 <!-- GOOGLE SEARCH  -->
 <div class="shadowbox searchbar hovered">
   <img src="assets/lmgtfy.png">
@@ -108,7 +122,9 @@
     <div class="cryptosearch hovered" id="cryptos">
     </div>
 </section>
+</div>
 
   <script src="assets/index.js"></script>
+ 
 </body>
 </html>

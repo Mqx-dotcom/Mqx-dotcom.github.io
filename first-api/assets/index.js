@@ -111,10 +111,10 @@ const searchctop5 = (currency) => {
           <th scope="row">${data.main.humidity}%</th>`
           humidContainer.insertAdjacentHTML('beforeend', humid)
           let tempmin = `
-          <th scope="row">${data.main.temp_min}%</th>`
+          <th scope="row">${data.main.temp_min}°C</th>`
           tempMinContainer.insertAdjacentHTML('beforeend', tempmin) 
           let tempmax = `
-          <th scope="row">${data.main.temp_max}%</th>`
+          <th scope="row">${data.main.temp_max}°C</th>`
           tempMaxContainer.insertAdjacentHTML('beforeend', tempmax) 
 
           let weatherId = data.weather[0].main;
@@ -177,6 +177,79 @@ function submitsearch(event) {
 }
 srcg.addEventListener('submit', submitsearch);
 
+// initSortable()
+
+
+// parallax 1st test //
+$("#letsdance").mousemove(function(e) {
+  parallaxIt(e, ".shadowbox", 20);
+  parallaxIt(e, "#scofield", 400);
+  parallaxIt2(e, "#diogo", 200);
+  parallaxIt3(e, "#etchebest", -400);
+  parallaxIt4(e, "#diogod", -2000);
+});
+// moving everywhere //
+function parallaxIt(e, target, movement) {
+  var $this = $("#letsdance");
+  var relX = e.pageX - $this.offset().left;
+  var relY = e.pageY - $this.offset().top;
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width() / 2) / $this.width() * movement,
+    y: (relY - $this.height() / 2) / $this.height() * movement
+  });
+}
+// moving TOP+BOTTOM //
+function parallaxIt2(e, target, movement) {
+  var $this = $("#letsdance");
+  var relX = e.pageX - $this.offset().bottom;
+  var relY = e.pageY - $this.offset().top;
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width() / 2) / $this.width() * movement,
+    y: (relY - $this.height() / 2) / $this.height() * movement
+  });
+}
+// inversed move y //
+function parallaxIt3(e, target, movement) {
+  var $this = $("#letsdance");
+  var relX = e.pageX - $this.offset().left;
+  var relY = e.pageY - $this.offset().top;
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width() / 2) / $this.width() * movement,
+    y: -(relY - $this.height() / 2) / $this.height() * movement
+  });
+}
+// diagonal path //
+function parallaxIt4(e, target, movement) {
+  var $this = $("#letsdance");
+  var relX = e.pageX - $this.offset().left;
+  var relY = e.pageY - $this.offset().top;
+  TweenMax.to(target, 1, {
+    x: (relX - $this.width() / 2) / $this.width() * "3" * movement,
+    y: (relY - $this.height() / 2) / $this.height() * "2" * movement
+  });
+}
+
+// parallax 2nd test //
+
+// (function() {
+//   // Add event listener
+//   document.addEventListener("mousemove", para2);
+//   const elem = document.querySelector("backgroundImage");
+//   // Magic happens here
+//   function para2(e) {
+//       let _w = window.innerWidth/2;
+//       let _h = window.innerHeight/2;
+//       let _mouseX = e.clientX;
+//       let _mouseY = e.clientY;
+//       let _depth1 = `${50 - (_mouseX - _w) * 0.01}% ${50 - (_mouseY - _h) * 0.01}%`;
+//       let _depth2 = `${50 - (_mouseX - _w) * 0.02}% ${50 - (_mouseY - _h) * 0.02}%`;
+//       let _depth3 = `${50 - (_mouseX - _w) * 0.06}% ${50 - (_mouseY - _h) * 0.06}%`;
+//       let x = `${_depth3}, ${_depth2}, ${_depth1}`;
+//       console.log(x);
+//       elem.style.backgroundPosition = x;
+//   }
+
+// })();
 
 
 
